@@ -94,7 +94,7 @@ public class ResourceCentre {
 				} else {
 					System.out.println("Invalid type");
 				}
-//salma
+//salma.
 			} else if (option == OPTION_QUIT) {
 				System.out.println("Bye!");
 			} else {
