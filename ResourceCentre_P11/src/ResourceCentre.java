@@ -47,6 +47,7 @@ public class ResourceCentre {
 				} else {
 					System.out.println("Invalid type");
 				}
+				//salma
 
 			} else if (option == 3) {
 				// Loan item
