@@ -130,7 +130,7 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += String.format("%-84\n", camcorderList.get(i).toString());
-			//salma
+			//salma.
 		}
 		return output;
 	}
