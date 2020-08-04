@@ -157,13 +157,14 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			boolean isAvailable = chromebookList.get(i).getIsAvailable();
-			//CHengh
+		
+			//CHenghan
+			String assetTag = chromebookList.get(i).getAssetTag();
+			String description = chromebookList.get(i).getDescription();
+			String showAvailability = ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable());
 			String dueDate = chromebookList.get(i).getDueDate();
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
-					chromebookList.get(i).getDescription(), 
-					ResourceCentre.showAvailability(isAvailable),
-					dueDate,chromebookList.get(i).getOs());
+			String os = chromebookList.get(i).getOs();
+			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", assetTag,description, showAvailability,dueDate,os);
 		}
 		return output;
 	}
