@@ -136,8 +136,16 @@ public class ResourceCentre {
 	//================================= Option 1 View =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
+		// Cheng han
 
 		for (int i = 0; i < camcorderList.size(); i++) {
+			String assetTag = camcorderList.get(i).getAssetTag();
+			String description = camcorderList.get(i).getDescription();
+			String showAvailability = ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable());
+			String dueDate = camcorderList.get(i).getDueDate();
+			int opticalZoom = camcorderList.get(i).getOpticalZoom();
+			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", assetTag,
+				description, showAvailability,dueDate,opticalZoom);
 
 			output += String.format("%-84\n", camcorderList.get(i).toString());
 			//salma.
@@ -157,7 +165,6 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-		
 			//CHenghan
 			String assetTag = chromebookList.get(i).getAssetTag();
 			String description = chromebookList.get(i).getDescription();
