@@ -20,16 +20,19 @@ public class ResourceCentre {
 		int option = 0;
 
 		while (option != OPTION_QUIT) {
+			//Hakim
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == OPTION_VIEW) {
+				//Hakim
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
 			} else if (option == OPTION_ADD) {
+				//Hakim
 				// Add a new item
 				ResourceCentre.setHeader("ADD");			
 				ResourceCentre.setHeader("ITEM TYPES");
@@ -54,6 +57,7 @@ public class ResourceCentre {
 				//salma
 
 			} else if (option == OPTION_LOAN) {
+				//Hakim
 				// Loan item
 				ResourceCentre.setHeader("LOAN");			
 				ResourceCentre.setHeader("ITEM TYPES");
@@ -73,6 +77,7 @@ public class ResourceCentre {
 				}
 
 			} else if (option == OPTION_RETURN) {
+				//Hakim
 				// Return item
 				ResourceCentre.setHeader("RETURN");				
 				ResourceCentre.setHeader("ITEM TYPES");
